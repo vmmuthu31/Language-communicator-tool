@@ -67,3 +67,16 @@ Parse raw-text files directly from Command Line Interface. It is highly recommen
       -o , --output     <output-file>
       -u, --ud          set this flag to predict universal dependencies
       -l , --language   select language (3 letter ISO-639 code) {hin, urd, eng}
+
+    irshad@iscnlp$ echo 'The quick brown fox jumps over the lazy dog .' | isc-parser -l eng 
+
+    1	The	The	DET	DET	_	4	det	_	_
+    2	quick	quick	ADJ	ADJ	_	4	amod	_	_
+    3	brown	brown	ADJ	ADJ	_	4	amod	_	_
+    4	fox	fox	NOUN	NOUN	_	5	nsubj	_	_
+    5	jumps	jumps	VERB	VERB	_	0	root	_	_
+    6	over	over	ADP	ADP	_	9	case	_	_
+    7	the	the	DET	DET	_	9	det	_	_
+    8	lazy	lazy	ADJ	ADJ	_	9	amod	_	_
+    9	dog	dog	NOUN	NOUN	_	5	nmod	_	_
+    10	.	.	PUNCT	PUNCT	_	5	punct	_	_
