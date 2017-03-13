@@ -15,9 +15,9 @@ Install dependencies
 Before Install
 ^^^^^^^^^^^^^^
 
-install `pos-tagger`_
+install `postagger`_
 
-.. _`pos-tagger`: https://bitbucket.org/iscnlp/pos-tagger 
+.. _`postagger`: https://bitbucket.org/iscnlp/pos-tagger 
 
 Install
 ^^^^^^^
