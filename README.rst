@@ -10,12 +10,9 @@ Install dependencies
 
 ::
 
-`dependency-parser`_ requires `pos-tagger`_ 
-
-.. _`dependency-parser`: https://bitbucket.org/iscnlp/parser
-.. _`pos-tagger`: https://bitbucket.org/iscnlp/pos-tagger
- 
-pip install -r requirements.txt
+    dependency-parser requires pos-tagger
+    install pos-tagger from https://bitbucket.org/iscnlp/pos-tagger 
+    pip install -r requirements.txt
 
 Install
 ^^^^^^^
