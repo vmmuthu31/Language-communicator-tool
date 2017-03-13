@@ -1,4 +1,3 @@
 six
 pbr>=2.0.0
 numpy>=1.10.4
-https://bitbucket.org/iscnlp/pos-tagger/get/c7ecc2d5bcfd.zip
