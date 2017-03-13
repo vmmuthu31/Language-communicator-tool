@@ -10,9 +10,9 @@ Install dependencies
 
 ::
 
-    install `pos-tagger`_ 
+install `pos-tagger`_ 
 
-    .. _`pos-tagger`: https://bitbucket.org/iscnlp/pos-tagger
+.. _`pos-tagger`: https://bitbucket.org/iscnlp/pos-tagger
  
     pip install -r requirements.txt
 
