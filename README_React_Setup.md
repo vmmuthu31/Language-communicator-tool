@@ -11,10 +11,10 @@ sudo apt-get install -y npm
 
 => STEP-3
 -	Install the npm packages:
-$ npm install all
+- $ npm install all
 
 => STEP-4
-$ npm run start
+- $ npm run start
 
 ``` Your react app will setup and ready to use. Enjoy thanks.
 
