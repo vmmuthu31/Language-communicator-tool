@@ -7,7 +7,7 @@ sudo apt-get install -y npm
 => STEP-2
 -	Clone the directory from the following git link:
 -	git clone https://github.com/vilal-ali/aiver-0.1.2
-cd to clone direcotry.
+- cd to clone direcotry.
 
 => STEP-3
 -	Install the npm packages:
