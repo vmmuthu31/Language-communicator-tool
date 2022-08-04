@@ -20,7 +20,9 @@ import { FiEdit } from "react-icons/fi";
 //         "SentenceType": "affirmative"
 // }
 
-export default function USRGenerator() {
+export default function Usrgen() {
+  const [toggle, setToggle] = useState(true);
+
   // Defining the state:
   const [data, setData] = useState({
     data: [],
@@ -73,6 +75,18 @@ export default function USRGenerator() {
     sample2: [],
     sample3: [],
   });
+
+  toggle ? (
+    <input
+      onDoubleClick={() => {
+        setToggle(false);
+      }}
+    >
+      {storyinput}
+    </input>
+  ) : (
+    <input type="text" value={storyinput.status} />
+  );
 
   const sample1Click = (event) => {
     event.preventDefault();
@@ -225,15 +239,39 @@ export default function USRGenerator() {
                         <th>
                           <div className="td1">Concept</div>
                         </th>
+
                         {data.Concept.map((item, i) => {
                           return (
-                            <td>
-                              <div className="mx-3 td2" key={i}>
-                                {item ? item : "-"}
-                              </div>
-                            </td>
+                            <>
+                              <text>
+                                <td>
+                                  <div key={i} className="mx-3 td2">
+                                    <input
+                                      type="text"
+                                      onChange={(event) => {
+                                        setData(item);
+                                      }}
+                                      onKeyDown={(event) => {
+                                        if (
+                                          event.key === "Enter" ||
+                                          event.key === "Escape"
+                                        ) {
+                                          setToggle(true);
+                                          event.preventDefault();
+                                          event.stopPropagation();
+                                        }
+                                      }}
+                                      value={item}
+                                    >
+                                      {item ? item : "-"}
+                                    </input>
+                                  </div>
+                                </td>
+                              </text>
+                            </>
                           );
                         })}
+
                         {/* <td className='td1'  >
                         <div className="">
                           <button type="button" className="btn btn-success p-2 td1 border "><i className="bi bi-pencil"></i></button>
