@@ -1,0 +1,10 @@
+1	राम	राम	NNPC	NNPC	_	2	pof__cn	_	_
+2	चक्की	चक्की	NNP	NNP	_	4	k2	_	_
+3	का	का	PSP	PSP	_	2	lwg__psp	_	_
+4	ख़रीदने	ख़रीदने	VM	VM	_	8	rt	_	_
+5	के	के	PSP	PSP	_	4	lwg__psp	_	_
+6	लिए	लिए	PSP	PSP	_	4	lwg__psp	_	_
+7	बाज़ार	बाज़ार	NN	NN	_	8	k2p	_	_
+8	गया	गया	VM	VM	_	0	main	_	_
+9	।	।	SYM	SYM	_	8	rsym	_	_
+

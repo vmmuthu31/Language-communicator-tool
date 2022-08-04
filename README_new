@@ -1,0 +1,78 @@
+Required Files:
+	dup_new.cpp
+	makenewusr.sh
+	ilmt-morph
+	dictionary-scrapper.py
+	get-pip.py
+	install-project.sh
+	TAM-num-per-details.tsv.wx
+	H_concept-to-mrs-rels.dat
+	
+	
+NOTE:	SENTENCES HAVING ONLY ONE VERB CAN BE RUN FROM THIS PROGRAM.
+
+README:
+
+(1) Install iscnlp parser 
+	Please follow the instructions given in the [https://bitbucket.org/iscnlp/] repository.
+	First, install the tokenizer, then the pos-tagger, and then the parser. (Run all the commands in home itself)
+	
+	Read the readme given in all three and run the code given in terminal.
+	In pos-tagger and parser,
+		Run the dependencies code after installing them with given codes.
+		
+	After installing,
+		Keep your input file in parser folder and run command
+			isc-parser -i <input_file_name> > <output_file_name> 
+		in terminal and your parser output will be saved in your output file.
+			eg, 
+				isc-parser -i inp > oup
+
+
+(2) Install Morph
+	Download the given file [ilmt-morph-ner-from-api-0.2.zip] and extract it in parser folder.
+	Now open ilmt folder and put .py files in parser folder OR change the path of morph command in [makenewusr.sh file].
+	Download the given file [dictionary-scrapper.py] and put in parser folder.
+	Run following commands in terminal in parser folder.
+		sudo apt install python2.7
+		sudo apt-get install python-requests
+		
+	Download get-pip.py and copy it in parser folder.
+	Run following commands in terminal in parser folder.
+		sudo python2.7 get-pip.py 
+		sudo pip2.7 install requests
+		
+	Keep your input file in parser folder and run following command
+		python2.7 getMorphPruneAndNER.py -i <input_filename> -o <ouput_filename>
+	in terminal and your morph output will be saved in your output file.
+			eg,
+				python2.7 getMorphPruneAndNER.py -i test -o testoup
+
+
+(3) Install utf8_wx
+	copy this file in parser folder.
+	run command 
+		sudo bash install-project.sh			
+
+(4) Download file [TAM-num-per-details.tsv.wx] and paste in parser folder.
+
+(5) Download file [H_concept-to-mrs-rels.dat] and paste in parser folder.
+
+(6) Open program [dup_new.cpp] in text file
+	Go to line 182 and
+		change [/home/vaishnavi/language_communicator/dictionaries/H_concept-to-mrs-rels.dat]
+		Here, change [vaishnavi] with your username and save the program.
+		[NOTE: If you have [H_concept-to-mrs-rels.dat] in parser folder itself simply write this file name in the path.]
+
+
+(7) Run program
+	Download program [dup_new.cpp] and [makenewusr.sh] in parser folder
+	Open terminal and run command
+		sh makenewusr.sh <input_filename>
+		eg, 
+			sh makenewusr.sh testindexfile
+		
+(8) Output will be stored in [oup.xlsx].
+
+
+

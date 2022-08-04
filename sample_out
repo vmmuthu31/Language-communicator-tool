@@ -1,0 +1,30 @@
+Sentence :: राम गाना गाता है ।
+Morph Output:
+<Sentence id="1">			
+1	rAma	unk	<fs af='rAma,n,m,sg,3,d,0,0'>|<fs af='rAma,n,m,pl,3,d,0,0'>|<fs af='rAma,n,m,sg,3,o,0,0'>
+2	gAnA	unk	<fs af='gAnA,n,m,sg,3,d,0,0'>|<fs af='gA,v,m,sg,any,,nA,nA'>
+3	gAwA	unk	<fs af='gA,v,m,sg,any,,wA,wA'>
+4	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+5	.	unk	<fs af='.,punc,,,,,,'>
+			
+</Sentence>
+ Pruning Output:
+<Sentence id="1">
+1	rAma	NNP	<fs af='rAma,n,m,sg,3,d,0,0'>
+2	gAnA	NN	<fs af='gAnA,n,m,sg,3,d,0,0'>
+3	gAwA	VM	<fs af='gA,v,m,sg,any,,wA,wA'>
+4	hE	VM	<fs af='hE,v,any,sg,2,,hE,hE'>
+5	.	SYM	<fs af='.,punc,,,,,,'>
+</Sentence>
+NER Output:
+<Sentence id="1">
+1	((	NP	<fs etype='ne' esubtype='person'>
+1.1	rAma	unk
+	))
+2	gAnA	unk
+3	gAwA	unk
+4	hE	unk
+5	.	unk
+</Sentence>
+
+..................................

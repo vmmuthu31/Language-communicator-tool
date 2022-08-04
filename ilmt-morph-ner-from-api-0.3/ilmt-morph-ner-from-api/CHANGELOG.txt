@@ -1,0 +1,5 @@
+0.1 -- initial version
+
+0.2 -- Pruning output is also integrated.
+
+0.3 -- Added secure URLS with changing httpd to https

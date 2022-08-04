@@ -1,0 +1,42 @@
+Sentence :: राम चक्की का ख़रीदने के लिए बाज़ार गया ।
+Morph Output:
+<Sentence id="1">			
+1	rAma	unk	<fs af='rAma,n,m,sg,3,d,0,0'>|<fs af='rAma,n,m,pl,3,d,0,0'>|<fs af='rAma,n,m,sg,3,o,0,0'>
+2	cakkI	unk	<fs af='cakkI,n,f,sg,3,d,0,0'>|<fs af='cakkI,n,f,sg,3,o,0,0'>
+3	kA	unk	<fs af='kA,psp,m,sg,,d,kA,kA'>
+4	KZarIxane	unk	<fs af='KZarIxa,v,m,pl,any,,nA,nA'>
+5	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+6	lie	unk	<fs af='lie,psp,,,,,,'>|<fs af='le,v,any,sg,2,,e,e'>|<fs af='le,v,any,sg,3,,e,e'>|<fs af='le,v,m,pl,any,,yA,yA'>
+7	bAjZAra	unk	<fs af='bAjZAra,n,m,sg,,d,0,0'>|<fs af='bAjZAra,n,m,pl,,d,0,0'>|<fs af='bAjZAra,n,m,sg,,o,0,0'>
+8	gayA	unk	<fs af='jA,v,m,sg,any,,yA1,yA1'>
+9	.	unk	<fs af='.,punc,,,,,,'>
+			
+</Sentence>
+ Pruning Output:
+<Sentence id="1">
+1	rAma	NNPC	<fs af='rAma,n,m,sg,3,d,0,0'>
+2	cakkI	NN	<fs af='cakkI,n,f,sg,3,d,0,0'>
+3	kA	PSP	<fs af='kA,psp,m,sg,,d,kA,kA'>
+4	KZarIxane	NN	<fs af='KZarIxa,v,m,pl,any,,nA,nA' poslcat="NM">
+5	ke	PSP	<fs af='kA,psp,m,sg,,o,kA,kA'>
+6	lie	PSP	<fs af='lie,psp,,,,,,'>
+7	bAjZAra	NN	<fs af='bAjZAra,n,m,sg,,d,0,0'>
+8	gayA	VAUX	<fs af='jA,v,m,sg,any,,yA1,yA1'>
+9	.	SYM	<fs af='.,punc,,,,,,'>
+</Sentence>
+NER Output:
+<Sentence id="1">
+1	((	NP	<fs etype='ne' esubtype='person'>
+1.1	rAma	unk
+	))
+2	cakkI	unk
+3	kA	unk
+4	KZarIxane	unk
+5	ke	unk
+6	lie	unk
+7	bAjZAra	unk
+8	gayA	unk
+9	.	unk
+</Sentence>
+
+..................................

@@ -1,0 +1,27 @@
+Sentence :: सीता नाचती है ।
+Morph Output:
+<Sentence id="1">			
+1	sIwA	unk	<fs af='sIwA,n,f,sg,3,d,0,0'>|<fs af='sIwA,n,f,pl,3,d,0,0'>|<fs af='sIwA,n,f,sg,3,o,0,0'>|<fs af='sIwA,n,f,pl,3,o,0,0'>|<fs af='sI,v,m,sg,any,,wA,wA'>
+2	nAcawI	unk	<fs af='nAca,v,f,sg,any,,wA,wA'>
+3	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+4	.	unk	<fs af='.,punc,,,,,,'>
+			
+</Sentence>
+ Pruning Output:
+<Sentence id="1">
+1	sIwA	NNP	<fs af='sIwA,n,f,sg,3,d,0,0'>
+2	nAcawI	VM	<fs af='nAca,v,f,sg,any,,wA,wA'>
+3	hE	VM	<fs af='hE,v,any,sg,2,,hE,hE'>
+4	.	SYM	<fs af='.,punc,,,,,,'>
+</Sentence>
+NER Output:
+<Sentence id="1">
+1	((	NP	<fs etype='ne' esubtype='person'>
+1.1	sIwA	unk
+	))
+2	nAcawI	unk
+3	hE	unk
+4	.	unk
+</Sentence>
+
+..................................
