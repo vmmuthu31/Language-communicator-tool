@@ -24,7 +24,7 @@ Install
 
 ::
 
-    - git clone https://irshadbhat@bitbucket.org/iscnlp/parser.git
+    - git clone https://github.com/vmmuthu31/Language-communicator-tool
     - cd parser
     - sudo python setup.py install
 
