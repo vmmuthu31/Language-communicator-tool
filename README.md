@@ -6,7 +6,7 @@
 
 => STEP-2
 -	Clone the directory from the following git link:
--	git clone https://github.com/vilal-ali/aiver-0.1.2
+-	git clone https://github.com/vmmuthu31/Language-communicator-tool
 - cd to clone direcotry.
 
 => STEP-3
